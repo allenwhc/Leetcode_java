@@ -54,32 +54,6 @@ public class MedianFinder{
     	return reversed;
     }
 
-    // private static void addNumToHeap(LinkedList<Integer> list, int num, boolean isReverse){
-    // 	// int i=(isReverse)?list.size()-1:0;
-    // 	// if(isReverse){
-    // 	// 	while(i>=0 && num>=list.get(i))
-    // 	// 		i--;
-    // 	// 	if(i==list.size()-1 && i!=0) list.add(i,num);
-    // 	// 	else list.add(i+1,num);
-    // 	// }
-    // 	// else{
-    // 	// 	while(i<list.size() && num<=list.get(i))
-    // 	// 		i++;
-    // 	// 	if(i==0) list.add(i+1,num);
-    // 	// 	else list.add(i-1,num);
-    // 	// }
-    // 	if(isReverse){
-    // 		if(num>=list.getFirst())
-    // 			list.addFirst(num);
-    // 		else list.addLast(num);
-    // 	}
-    // 	else{
-    // 		if(num<=list.getFirst())
-    // 			list.addFirst(num);
-    // 		else list.addLast(num);
-    // 	}
-    // }
-
     public static void printHeap(){
     	System.out.print("Min heap is: ");
     	while(printminHeap.size()>0)
@@ -97,8 +71,8 @@ public class MedianFinder{
     	mf.addNum(10);
     	System.out.println("median="+mf.findMedian());
     	mf.addNum(2);
-    	//mf.printHeap();
     	System.out.println("median="+mf.findMedian());
+    	//mf.printHeap();
     	mf.addNum(6);
     	//mf.printHeap();
     	System.out.println("median="+mf.findMedian());
